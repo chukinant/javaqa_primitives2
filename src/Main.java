@@ -15,12 +15,14 @@ public class Main {
             // Сумма бонуса при сумме ниже порога
             int bonus = 0;
             clientAccount = clientAccount + addingToAccount;
+            // Вывод на экран сообщения о текущей сумме на счету и количеством добавленных бонусов
             System.out.println("You have " + clientAccount + " roubles on your account (" + bonus + " bonuses were added)");
         }
         // Расчет суммы бонуса при превышении порога
         else {
             int bonus = addingToAccount / earningThreshold;
             clientAccount = clientAccount + addingToAccount + bonus;
+            // Вывод на экран сообщения о текущей сумме на счету и количеством добавленных бонусов
             System.out.println("You have " + clientAccount + " roubles on your account (" + bonus + " bonuses were added)");
         }
     }
